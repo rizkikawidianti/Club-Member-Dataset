@@ -82,7 +82,7 @@ Data Validation
 
 Dataset Overview:
 
-- 2004 rows and 13 columns
+- 2004 rows and 12 columns
 - date range: 2012 - 2022
 
 The cleaned dataset enables:
