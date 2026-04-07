@@ -67,7 +67,8 @@ During initial exploration, several data quality issues were identified:
 
 
 - After Cleaning
-<img width="1537" height="786" alt="after" src="https://github.com/user-attachments/assets/9251c138-dd04-4169-b42c-b04b5109d7cd" />
+<img width="1536" height="784" alt="after" src="https://github.com/user-attachments/assets/4e9c3fad-6cc0-4fea-960b-f91b03f44d18" />
+
 
 
 Data Validation
