@@ -1,13 +1,13 @@
 # Club-Member-Dataset
-**Project Overview:**
+## Project Overview
 
-This project focuses on cleaning and transforming a raw club membership dataset using SQL. The raw data contains member information such as personal details, contact information, address, job title, and membership dates. However, the raw data includes various data quality issues such as duplicate records, inconsistent formatting, corrupted text values, and unstructured address fields. The final dataset is designed to support accurate analysis of member demographics, geographic distribution, and membership trends.
+This is an early SQL data cleaning project. It is included as supporting proof of data validation, duplicate review, outlier flagging, and structured field preparation. This project focuses on cleaning and transforming a raw club membership dataset using SQL. The raw data contains member information such as personal details, contact information, address, job title, and membership dates. However, the raw data includes various data quality issues such as duplicate records, inconsistent formatting, corrupted text values, and unstructured address fields. The final dataset is designed to support accurate analysis of member demographics, geographic distribution, and membership trends.
 
-**Business Context:**
+## Business Context
 
 The dataset represents membership records for a club or organization that tracks member demographics, location, and engagement over time. This data is typically used by operations and management teams to understand member distribution across different regions, monitor membership growth and trends over time, also support decision-making for marketing, expansion, and member engagement strategies. To ensure reliable analysis and decision-making, the dataset must be cleaned, standardized, and structured before use.
 
-**Cleaning Objectives:**
+## Cleaning Objectives
 
 - Ensure each member record is unique and accurate
 - Standardize text fields for consistency
@@ -16,13 +16,13 @@ The dataset represents membership records for a club or organization that tracks
 - Detect and flag suspicious or invalid records
 
 
-**Dataset Overview:**
+## Dataset Overview
 
 - Grain: 1 row = 1 member data
 - 2007 rows and 8 columns
-- date range: 1912 - 2022
+- Date range: 1912 - 2022
 
-**Data Issues Identified:**
+## Data Issues Identified
 
 During initial exploration, several data quality issues were identified:
 
@@ -34,7 +34,7 @@ During initial exploration, several data quality issues were identified:
 6. Outliers in age and membership_date
 
 
-**Cleaning Steps Performed:**
+## Cleaning Steps Performed
 
 1. Resolved Duplicates
     - Investigated duplicate full_name
@@ -50,7 +50,7 @@ During initial exploration, several data quality issues were identified:
 5. Checked Outliers
     - Identified extreme values and assessed business validity
 
-**Key Decisions & Assumptions:**
+## Key Decisions & Assumptions
 
 - Duplicate values are removed after validation
 - Blank values were treated as NULL to standardize missing data handling
@@ -60,7 +60,7 @@ During initial exploration, several data quality issues were identified:
 - Outliers are flagged in anomalies column (added for this purpose)
 
 
-**Before VS After:**
+## Before VS After
 
 - Before Cleaning
 <img width="1315" height="789" alt="before" src="https://github.com/user-attachments/assets/3a694052-0066-47c9-9f41-4d8b8a42452d" />
@@ -71,28 +71,27 @@ During initial exploration, several data quality issues were identified:
 
 
 
-Data Validation
+## Data Validation
 
 - Verified no remaining invalid date formats
 - Checked for consistency in categorical values
 - Checked for all outliers to be flagged
 - Confirmed no unexpected data loss during cleaning
 
-**Final Output:**
+## Final Output
 
-Dataset Overview:
-
+**Dataset Overview:**
 - 2004 rows and 12 columns
-- date range: 2012 - 2022
+- Date range: 2012 - 2022
 
-The cleaned dataset enables:
+**The cleaned dataset enables:**
 
 - Accurate demographic analysis of members
 - Reliable geographic segmentation using region mapping
 - Better tracking of membership trends over time
 - Identification of suspicious or invalid records through anomaly flags
 
-**Key Takeaways:**
+## Key Takeaways
 
 - Data cleaning requires both technical execution and judgment
 - Validation is required so not all duplicates can be removed blindly
